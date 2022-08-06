@@ -1,0 +1,17 @@
+<div>
+<form method="POST">
+    {% csrf_token %}
+    <fieldset>
+        <legend>
+            Register Page
+        </legend>
+        {{ form.as_p }}
+    </fieldset>
+    <button type="submit">Sign Up</button>
+</form>
+
+<div>
+    <small>Already have an account? <a href="{% url 'login' %}">Sign In</a> </small>
+</div>
+
+</div>
